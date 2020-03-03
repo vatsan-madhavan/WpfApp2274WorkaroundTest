@@ -19,7 +19,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <_SystemReflectionMetadataLoadContextTfm Condition="'$(MSBuildRuntimeType)' == 'Core'">netcoreapp3.0</_SystemReflectionMetadataLoadContextTfm>
+    <_SystemReflectionMetadataLoadContextTfm Condition="'$(MSBuildRuntimeType)' == 'Core'">netcoreapp3.1</_SystemReflectionMetadataLoadContextTfm>
     <_SystemReflectionMetadataLoadContextTfm Condition="'$(MSBuildRuntimeType)' != 'Core'">netstandard2.0</_SystemReflectionMetadataLoadContextTfm>
   </PropertyGroup>
 
