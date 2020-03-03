@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace WpfApp2274WorkaroundTest
 {
     /// <summary>
@@ -23,6 +24,7 @@ namespace WpfApp2274WorkaroundTest
         public MainWindow()
         {
             InitializeComponent();
+            MyLabel.Content = "Hi";
         }
     }
 }

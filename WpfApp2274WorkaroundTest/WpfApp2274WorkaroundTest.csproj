@@ -6,9 +6,19 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <RestoreAdditionalProjectSources>
+      https://pkgs.dev.azure.com/dnceng/public/_packaging/darc-pub-dotnet-corefx-e946cebe-1/nuget/v3/index.json;
+      $(RestoreAdditionalProjectSources)
+    </RestoreAdditionalProjectSources>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="WPF2274Workaround" Version="1.0.0" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.2" />
+    <PackageReference Include="System.Reflection.MetadataLoadContext" Version="4.7.1" />
     <PackageReference Include="Unity" Version="4.0.1" />
   </ItemGroup>
+
+  <Target Name="EnsurePack" AfterTargets="Build" DependsOnTargets="Pack" />
 
 </Project>
