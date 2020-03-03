@@ -7,6 +7,6 @@
 # Steps:
 1. open solution
 2. build the wpf2274 project
-3. Cmd to the WpfAppWorkaroundProject
+3. Cmd to the WpfApp2274WorkaroundTest
 4. dotnet restore
 5. Build and run
