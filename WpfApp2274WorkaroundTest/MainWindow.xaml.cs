@@ -24,5 +24,7 @@ namespace WpfApp2274WorkaroundTest
         {
             InitializeComponent();
         }
+
+        public ValueTuple<int> IntTuple { get; set; }
     }
 }
